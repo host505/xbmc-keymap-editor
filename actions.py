@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 _actions = [
-  ["Navigation", [
+  ["Navigation actions", [
     "left"              , "Move Left",
     "right"             , "Move Right",
     "up"                , "Move Up",
@@ -32,14 +32,13 @@ _actions = [
     "previousmenu"      , "Previous Menu",
     "info"              , "Show Info",
     "contextmenu"       , "Context Menu",
-    "menu"              , "Menu",    
     "firstpage"         , "First Page",
     "lastpage"          , "Last Page",
     "nextletter"        , "Next Letter",
     "prevletter"        , "Previous Letter",
   ]],
 
-  ["Playback", [
+  ["Playback actions", [
     "play"              , "Play",
     "pause"             , "Pause",
     "playpause"         , "Play/Pause",
@@ -48,6 +47,8 @@ _actions = [
     "skipprevious"      , "Previous",
     "fastforward"       , "Fast Forward",
     "rewind"            , "Rewind",
+    "PlayerControl(tempoup)" "Increase playback speed",
+    "PlayerControl(tempodown)" "Decrease playback speed",
     "smallstepback"     , "Small Step Back",
     "stepforward"       , "Step Forward",
     "stepback"          , "Step Back",
@@ -55,7 +56,11 @@ _actions = [
     "bigstepback"       , "Big Step Back",
     "chapterorbigstepforward", "Next Chapter or Big Step Forward",
     "chapterorbigstepBack"   , "Previous Chapter or Big Step Back",
+    "VideoNextStream"   , "Toggle Video Tracks",
     "osd"               , "Show OSD",
+    "codecinfo"         , "Show codec info",
+    "playerprocessinfo" , "Player Process info",
+    "playerdebug"       , "Player debug",
     "showtime"          , "Show current play time",
     "playlist"          , "Show Playlist",
     "fullscreen"        , "Toggle Fullscreen",
@@ -74,7 +79,7 @@ _actions = [
     "switchplayer"            , "Switch Player",
   ]],
 
-  ["Audio", [
+  ["Audio actions", [
     "mute"              , "Mute",
     "volumeup"          , "Volume Up",
     "volumedown"        , "Volume Down",
@@ -85,7 +90,7 @@ _actions = [
     "audiotoggledigital", "Toggle Digital/Analog",
   ]],
 
-  ["Pictures", [
+  ["Pictures actions", [
     "nextpicture"       , "Next Picture",
     "previouspicture"   , "Previous Picture",
     "rotate"            , "Rotate Picture",
@@ -104,26 +109,33 @@ _actions = [
     "zoomlevel9"        , "Zoom level 9",
   ]],
 
-  ["Subtitle", [
+  ["Subtitles actions", [
     "showsubtitles"     , "Show Subtitles",
     "nextsubtitle"      , "Next Subtitle",
+    "browsesubtitle"    , "Browse Subtitle",
     "subtitledelay"     , "Delay",
     "subtitledelayminus", "Delay Minus",
     "subtitledelayplus" , "Delay Plus",
     "subtitlealign"     , "Align",
-    #"subtitleshiftup"   , "SUBTITLE_VSHIFT_UP", #?
-    #"subtitleshiftdown" , "SUBTITLE_VSHIFT_DOWN", #?
+    "subtitleshiftup"   , "SUBTITLE_VSHIFT_UP",
+    "subtitleshiftdown" , "SUBTITLE_VSHIFT_DOWN",
   ]],
 
-  ["PVR", [
+  ["PVR actions", [
     "channelup"             , "Channel Up",
     "channeldown"           , "Channel Down",
     "previouschannelgroup"  , "Previous channel group",
     "nextchannelgroup"      , "Next channel group",
     "record"                , "Record",
+    "playpvr"               , "PVR Play",
+    "playpvrtv"             , "PVR Play TV",
+    "playpvrradio"          , "PVR Play Radio",
+    "togglecommskip"        , "Toggle Commskip",
+    "showtimerrule"         , "PVR Show Timer Rule",
+    "channelnumberseparator", "Channel Number Separator",
   ]],
 
-  ["Item Actions", [
+  ["Item actions", [
     "queue"             , "Queue item",
     "delete"            , "Delete item",
     "copy"              , "Copy item",
@@ -137,7 +149,7 @@ _actions = [
     #"decreaserating"    , "DECREASE_RATING", #unused
   ]],
 
-  ["System", [
+  ["System actions", [
     "togglefullscreen"  , "Toggle Fullscreen",
     "minimize"          , "Minimize",
     "shutdown"          , "Shutdown",
@@ -149,7 +161,7 @@ _actions = [
     "quit"              , "Quit XBMC",
   ]],
 
-  ["Virtual Keyboard", [
+  ["Virtual Keyboard actions", [
     "enter"             , "Enter",
     "shift"             , "Shift",
     "symbols"           , "Symbols",
@@ -170,12 +182,11 @@ _actions = [
     "blue"              , "Teletext Blue",
   ]],
 
-  ["Other", [
+  ["Other actions", [
     "updatelibrary(video)", "Update Video Library",
     "updatelibrary(music)", "Update Music Library",
-    "cleanlibrary(video)",  "Clean Video Library",
+    "cleanlibrary(video)", "Clean Video Library",
     "cleanlibrary(music)", "Clean Music Library",
-    "codecinfo"         , "Show codec info",
     "screenshot"        , "Take screenshot",
     "reloadkeymaps"     , "Reload keymaps",
     "increasepar"       , "Increase PAR",
@@ -345,8 +356,8 @@ _activate_window = [
 
 _windows = [
   "global"                   , "Global",
-  "fullscreenvideo"          , "Fullscreen Video",
-  "fullscreenlivetv"         , "Fullscreen Live TV",
+  "fullscreenvideo"          , "FullscreenVideo",
+  "fullscreenlivetv"         , "FullscreenLiveTV",
   "home"                     , "Home",
   "programs"                 , "Programs",
   "videos"                   , "Videos",
@@ -354,13 +365,13 @@ _windows = [
   "pictures"                 , "Pictures",
   "pvr"                      , "PVR",
   "filemanager"              , "Filemanager",
-  "pvrosdteletext"           , "OSD Teletext",
-  "virtualkeyboard"          , "Virtual Keyboard",
-  "playercontrols"           , "Player Controls",
-  "seekbar"                  , "Seek bar",
-  "musicosd"                 , "Music OSD",
-  "osdvideosettings"         , "Video OSD Settings",
-  "osdaudiosettings"         , "Audio OSD Settings",
+  "pvrosdteletext"           , "OSDTeletext",
+  "virtualkeyboard"          , "VirtualKeyboard",
+  "playercontrols"           , "PlayerControls",
+  "seekbar"                  , "Seekbar",
+  "musicosd"                 , "MusicOSD",
+  "osdvideosettings"         , "VideoOSDSettings",
+  "osdaudiosettings"         , "AudioOSDSettings",
   "visualisation"            , "Visualisation",
   "slideshow"                , "Slideshow"
 ]
