@@ -1,3 +1,9 @@
+[B]v0.0.1[/B]
+- Forked/Rebranded to Keymap Edit. Initial release
+- Added some missing actions introduced in Kodi v17 & v18
+- Generated .xml is now properly indented, instead of 1 line
+- Rephrased some action categories
+
 [B]v1.0.10[/B]
 - Added support for v17 Krypton
 
