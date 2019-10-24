@@ -1,4 +1,8 @@
 [B]v0.0.5[/B]
+- Added Greek language
+- Some rephrasing
+
+[B]v0.0.5[/B]
 - Fixed keymap reloading after save
 - Converted to current language formatting
 

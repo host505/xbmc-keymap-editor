@@ -45,7 +45,7 @@ msgid "Discard changes?"
 msgstr ""
 
 msgctxt "#30007"
-msgid "Select Window to manage shortcuts"
+msgid "Select Menu category/Window to manage key mappings"
 msgstr ""
 
 msgctxt "#30008"
@@ -53,7 +53,7 @@ msgid "Select action category"
 msgstr ""
 
 msgctxt "#30009"
-msgid "Select the action to assign a key"
+msgid "Select the action to assign a key to"
 msgstr ""
 
 msgctxt "#30010"
@@ -62,5 +62,9 @@ msgstr ""
 
 msgctxt "#30011"
 msgid "Edit key"
+msgstr ""
+
+msgctxt "#30012"
+msgid "Remove"
 msgstr ""
 

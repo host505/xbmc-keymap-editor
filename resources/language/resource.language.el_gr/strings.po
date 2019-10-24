@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: bg_BG\n"
+"Language: el_GR\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#30000"
@@ -26,45 +26,45 @@ msgstr " "
 
 msgctxt "#30002"
 msgid "Press the key you want to assign now"
-msgstr "Натиснете бутона, който желаете да ползвате"
+msgstr "Επιλέξτε το πλήκτρο που θέλετε να αναθέσετε"
 
 msgctxt "#30003"
 msgid "Edit"
-msgstr "Редактиране"
+msgstr "Επεξεργασία"
 
 msgctxt "#30004"
 msgid "Reset to default"
-msgstr "Нулиране на настройките"
+msgstr "Επαναφορά"
 
 msgctxt "#30005"
 msgid "Save"
-msgstr "Записване"
+msgstr "Αποθήκευση"
 
 msgctxt "#30006"
 msgid "Discard changes?"
-msgstr "Желаете ли да се откажете от промените?"
+msgstr "Ακύρωση αλλαγών;"
 
 msgctxt "#30007"
 msgid "Select Menu category/Window to manage key mappings"
-msgstr "Избор на прозорец"
+msgstr "Επιλογή κατηγορίας μενού/παραθύρου που θα εφαρμοστεί το key mapping"
 
 msgctxt "#30008"
 msgid "Select action category"
-msgstr "Избор на категория от действия"
+msgstr "Επιλογή κατηγορίας ενεργειών"
 
 msgctxt "#30009"
 msgid "Select the action to assign a key to"
-msgstr "Избор на действие към което да назначите бутон"
+msgstr "Επιλογή ενέργειας για ανάθεση πλήκτρου"
 
 msgctxt "#30010"
 msgid "Timeout in %.0f seconds..."
-msgstr "Остават %.0f секунди..."
+msgstr "Λήξη χρόνου σε %.0f δευτερόλεπτα..."
 
 msgctxt "#30011"
 msgid "Edit key"
-msgstr "Редактирай бутона"
+msgstr "Επεξεργασία κλειδιού"
 
 msgctxt "#30012"
 msgid "Remove"
-msgstr "Премахни"
+msgstr "Αφαίρεση"
 
