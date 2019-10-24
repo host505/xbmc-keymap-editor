@@ -1,24 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.keymapedit"
-       name="Keymap Edit"
-       version="0.0.3"
-       provider-name="takoi, host505">
+<addon id="script.keymapedit" name="Keymap Edit" provider-name="takoi, host505" version="0.0.4">
     <requires>
-        <import addon="xbmc.python" version="2.19.0"/>
+        <import addon="xbmc.python" version="2.19.0" />
     </requires>
-    <extension point="xbmc.python.script" library="main.py"/>
+    <extension library="main.py" point="xbmc.python.script" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">An editor for keymap files</summary>
-        <description lang="en">Keymap Edit is a GUI for configuring mappings for remotes, keyboard and other inputs supported by xbmc. Note: existing user defined key mappings will be removed.[CR][I]This is a Keymap Editor fork. Credit goes to original creator (takoi)[/I]</description>
+        <summary lang="en_GB">An editor for keymap files</summary>
+        <description lang="en_GB">Keymap Edit is a GUI for configuring mappings for remotes, keyboard and other inputs supported by xbmc. Note: existing user defined key mappings will be removed.[CR][I]This is a Keymap Editor fork. Credit goes to original creator (takoi)[/I]</description>
         <platform>all</platform>
-        <language/>
+        <language />
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum/>
+        <forum />
         <source>https://github.com/host505/script.keymapedit</source>
         <news>- Forked - Rebranded to Keymap Edit. Initial release
 - Added some missing actions, categories, windows introduced in Kodi v17 and v18
 - Generated .xml is now properly indented, instead of 1 line
 - Rephrased some action categories
+- Fixed keymap reloading after save
+- Converted to current language formatting
         </news>
     </extension>
 </addon>

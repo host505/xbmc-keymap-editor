@@ -72,7 +72,7 @@ def main():
     ## main loop ##
     confirm_discard = False
     while True:
-        idx = Dialog().select(tr(30000), [tr(30003), tr(30004), tr(30005)])
+        idx = Dialog().select(tr(30000), [tr(30003), tr(30004), tr(30005), tr(30013)])
         if idx == 0:
             # edit
             editor = Editor(defaultkeymap, userkeymap)
@@ -87,7 +87,7 @@ def main():
             if os.path.exists(gen_file):
                 shutil.copyfile(gen_file, gen_file + ".old")
             utils.write_keymap(userkeymap, gen_file)
-            xbmc.executebuiltin("action(reloadkeymaps)")
+            xbmc.executebuiltin("Action(reloadkeymaps)")
             break
         elif idx == -1 and confirm_discard:
             if Dialog().yesno(tr(30000), tr(30006)) == 1:
