@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<settings>
+
+    <category label="General">
+        <setting type="lsep" label="30013" />
+        <setting id="deviceTag" type="select" label="30014" values="keyboard|remote|gamepad|mouse|touch" default="keyboard" />
+    </category>
+
+</settings>

@@ -1,4 +1,7 @@
-[B]v0.0.5[/B]
+[B]v0.1.0[/B]
+- Added support for devices that correspond under the remote, gamepad, mouse or touch tags
+
+[B]v0.0.6[/B]
 - Added Greek language
 - Some rephrasing
 
