@@ -1,3 +1,7 @@
+[B]v0.0.5[/B]
+- Fixed keymap reloading after save
+- Converted to current language formatting
+
 [B]v0.0.1[/B]
 - Forked/Rebranded to Keymap Edit. Initial release
 - Added some missing actions/categories/windows introduced in Kodi v17 & v18

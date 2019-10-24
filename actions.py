@@ -68,7 +68,7 @@ _actions = [
     "osd"               , "Show OSD",
     "codecinfo"         , "Show codec info (up to v16)",
     "playerprocessinfo" , "Player Process info (v17+)",
-    "playerdebug"       , "Player Debug (v18+)",
+    "playerdebug"       , "Player Debug (v17+)",
     "showtime"          , "Show current play time",
     "playlist"          , "Show Playlist",
     "fullscreen"        , "Toggle Fullscreen",

@@ -87,7 +87,7 @@ def main():
             if os.path.exists(gen_file):
                 shutil.copyfile(gen_file, gen_file + ".old")
             utils.write_keymap(userkeymap, gen_file)
-            xbmc.executebuiltin("action(reloadkeymaps)")
+            xbmc.executebuiltin("Action(reloadkeymaps)")
             break
         elif idx == -1 and confirm_discard:
             if Dialog().yesno(tr(30000), tr(30006)) == 1:

@@ -5,3 +5,5 @@ Changes so far:
 - Added some missing actions introduced in Kodi v17 & v18
 - Generated .xml is now properly indented, instead of 1 line
 - Rephrased some action categories
+- Fixed keymap reloading after save
+- Converted to current language formatting
