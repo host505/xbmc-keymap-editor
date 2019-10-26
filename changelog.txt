@@ -1,8 +1,10 @@
-[B]v0.1.1[/B]
-- Revert changes of v0.1.0 - button identification doesn't work for inputs other than keyboard
+[B]v0.1.1a[/B]
+- Allow multiple keymap files, one for each supported device tag (keyboard, remote, gamepad, mouse, touch)
+- EXPIREMENTAL - WIP
 
 [B]v0.1.0[/B]
 - Added support for devices that correspond under the remote, gamepad, mouse or touch tags
+- EXPIREMENTAL - WIP
 
 [B]v0.0.6[/B]
 - Added Greek language

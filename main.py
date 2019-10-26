@@ -23,21 +23,24 @@ import xbmc
 import utils
 from xbmcgui import Dialog
 from editor import Editor
-from utils import tr
 
 
-default = xbmc.translatePath('special://xbmc/system/keymaps/keyboard.xml')
-userdata = xbmc.translatePath('special://userdata/keymaps')
-gen_file = os.path.join(userdata, 'gen.xml')
+default = xbmc.translatePath('special://xbmc/system/keymaps/%s.xml' % utils.setting('deviceTag'))
+userdata = xbmc.translatePath('special://userdata/keymaps/')
+kmName = utils.setting('deviceTag') + '_gen.xml'
+gen_file = os.path.join(userdata, kmName)
 
 
 def setup_keymap_folder():
     if not os.path.exists(userdata):
         os.makedirs(userdata)
     else:
+        #check if 'gen.xml' (from older versions) exists, and if it does copy and rename it to the new format
+        if os.path.exists(os.path.join(userdata, 'gen.xml')):
+            shutil.copyfile(os.path.join(userdata, 'gen.xml'), os.path.join(userdata, kmName))
         #make sure there are no user defined keymaps
         for name in os.listdir(userdata):
-            if name.endswith('.xml') and name != os.path.basename(gen_file):
+            if name.endswith('.xml') and not name.endswith('_gen.xml'):# and name != os.path.basename(gen_file):
                 src = os.path.join(userdata, name)
                 for i in xrange(100):
                     dst = os.path.join(userdata, "%s.bak.%d" % (name, i))
@@ -72,7 +75,7 @@ def main():
     ## main loop ##
     confirm_discard = False
     while True:
-        idx = Dialog().select(tr(30000), [tr(30003), tr(30004), tr(30005)])
+        idx = Dialog().select(utils.tr(30000), [utils.tr(30003), utils.tr(30004), utils.tr(30005)])
         if idx == 0:
             # edit
             editor = Editor(defaultkeymap, userkeymap)
@@ -90,7 +93,7 @@ def main():
             xbmc.executebuiltin("Action(reloadkeymaps)")
             break
         elif idx == -1 and confirm_discard:
-            if Dialog().yesno(tr(30000), tr(30006)) == 1:
+            if Dialog().yesno(utils.tr(30000), utils.tr(30006)) == 1:
                 break
         else:
             break
