@@ -21,7 +21,6 @@ import xbmc
 import xbmcaddon
 
 tr = xbmcaddon.Addon().getLocalizedString
-setting = xbmcaddon.Addon().getSetting
 
 def rpc(method, **params):
     params = json.dumps(params)
@@ -44,21 +43,18 @@ def read_keymap(filename):
 
 def write_keymap(keymap, filename):
     contexts = list(set([c for c, a, k in keymap]))
-    deviceTag = setting("deviceTag")
-    if deviceTag == "":
-        deviceTag == "keyboard"
 
     builder = ET.TreeBuilder()
     builder.start("keymap", {})
     for context in contexts:
         builder.start(context, {})
-        builder.start(deviceTag, {})
+        builder.start("keyboard", {})
         for c, a, k in keymap:
             if c == context:
                 builder.start("key", {"id":k})
                 builder.data(a)
                 builder.end("key")
-        builder.end(deviceTag)
+        builder.end("keyboard")
         builder.end(context)
     builder.end("keymap")
     element = builder.close()

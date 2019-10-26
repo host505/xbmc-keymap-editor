@@ -1,3 +1,6 @@
+[B]v0.1.1[/B]
+- Revert changes of v0.1.0 - button identification doesn't work for inputs other than keyboard
+
 [B]v0.1.0[/B]
 - Added support for devices that correspond under the remote, gamepad, mouse or touch tags
 

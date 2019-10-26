@@ -68,11 +68,3 @@ msgctxt "#30012"
 msgid "Remove"
 msgstr ""
 
-msgctxt "#30013"
-msgid "Choose the <tag> that your input device corresponds to:"
-msgstr ""
-
-msgctxt "#30014"
-msgid "Device tag"
-msgstr ""
-
