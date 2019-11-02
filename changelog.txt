@@ -1,3 +1,7 @@
+[B]v0.1.2mi[/B]
+- Added some osd windows
+- Allow lyrics add-ons to be assigned to the "runaddon" function
+
 [B]v0.1.1a[/B]
 - Allow multiple keymap files, one for each supported device tag (keyboard, remote, gamepad, mouse, touch)
 - EXPIREMENTAL - WIP
