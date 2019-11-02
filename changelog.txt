@@ -1,3 +1,7 @@
+[B]v0.1.2[/B]
+- Added some osd windows
+- Allow lyrics add-ons to be assigned to the "runaddon" function
+
 [B]v0.1.1[/B]
 - Revert changes of v0.1.0 - button identification doesn't work for inputs other than keyboard
 
