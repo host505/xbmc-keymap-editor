@@ -1,3 +1,8 @@
+[B]v0.1.3mi[/B]
+- Properly read the default keymap, with button combinations or "longpress" function
+- Always append xml declaration
+- Windows additions/rearrangement
+
 [B]v0.1.2mi[/B]
 - Added some osd windows
 - Allow lyrics add-ons to be assigned to the "runaddon" function

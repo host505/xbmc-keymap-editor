@@ -36,7 +36,9 @@ def read_keymap(filename):
             for context in keymap:
                 for device in context:
                     for mapping in device:
-                        key = mapping.get('id') or mapping.tag
+                        key1 = mapping.get('id') or mapping.tag
+                        key2 = mapping.get('mod')
+                        key = str(key1) + ' + ' + str(key2) if key2 != None else key1
                         action = mapping.text
                         if action:
                             ret.append((context.tag.lower(), action.lower(), key.lower()))
@@ -63,7 +65,7 @@ def write_keymap(keymap, filename):
     builder.end("keymap")
     element = builder.close()
     indent(element)
-    ET.ElementTree(element).write(filename, 'utf-8')
+    ET.ElementTree(element).write(filename, 'utf-8', True)
 
 def indent(elem, level=0):
     i = "\n" + level*"  "

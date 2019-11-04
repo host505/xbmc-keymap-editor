@@ -350,7 +350,6 @@ _activate_window = [
   "videossettings"           , "Videos Settings",
   "videotimeseek"            , "Video Time Seek",
   "visualisationpresetlist"  , "Vis. Preset List",
-  "weather"                  , "Weather",
   "weathersettings"          , "Weather Settings"
 ]
 
@@ -360,6 +359,8 @@ _windows = [
   "visualisation"            , "Visualisation",
   "fullscreenlivetv"         , "FullscreenLiveTV",
   "fullscreenradio"          , "FullscreenRadio",
+  "slideshow"                , "Slideshow",
+  "fullscreengame"           , "FullscreenGame",
   "videomenu"                , "VideoMenu",
   "playerprocessinfo"        , "PlayerProcessInfo",
   "home"                     , "Home",
@@ -367,14 +368,15 @@ _windows = [
   "videos"                   , "Videos",
   "music"                    , "Music",
   "pictures"                 , "Pictures",
-  "pvr"                      , "PVR (depricated)",
+  "weather"                  , "Weather",
+  "filemanager"              , "FileManager",
   "tvchannels"               , "TVChannels",
   "radiochannels"            , "RadioChannels",
   "tvguide"                  , "TVGuide",
   "radioguide"               , "RadioGuide",
-  "filemanager"              , "Filemanager",
   "teletext"                 , "Teletext",
   "pvrosdteletext"           , "PVROSDTeletext (depricated)",
+  "pvr"                      , "PVR (depricated)",
   "virtualkeyboard"          , "VirtualKeyboard",
   "numericinput"             , "NumericInput",
   "playercontrols"           , "PlayerControls",
@@ -384,9 +386,7 @@ _windows = [
   "osdvideosettings"         , "OSD-VideoSettings",
   "osdaudiosettings"         , "OSD-AudioSettings",
   "osdsubtitlesettings"      , "OSD-SubtitleSettings",
-  "gameosd"                  , "OSD-Game",
-  "fullscreengame"           , "FullscreenGame"
-  "slideshow"                , "Slideshow"
+  "gameosd"                  , "OSD-Game"
 ]
 
 from collections_backport import OrderedDict
