@@ -7,3 +7,6 @@ Changes so far:
 - Rephrased some action categories
 - Fixed keymap reloading after save
 - Converted to current language formatting
+
+
+*Development continues here: https://github.com/bleak-lodge/script.keymapedit*
